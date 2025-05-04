@@ -1,0 +1,11 @@
+name: gradle-build
+on: []
+jobs:
+  gradle-build-Job:
+    runs-on:
+      - codebuild-test-github-${{ github.run_id }}-${{ github.run_attempt }}
+    steps:
+      - run: |
+              echo "Gradle Build Stage"
+              gradle clean build --write-locks
+              
