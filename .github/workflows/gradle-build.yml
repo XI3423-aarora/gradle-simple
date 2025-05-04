@@ -2,8 +2,7 @@ name: Hello World
 on: [push]
 jobs:
   Hello-World-Job:
-    runs-on:
+    runs-on: 
       - codebuild-test-github-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - run: echo "Hello World"
-              
