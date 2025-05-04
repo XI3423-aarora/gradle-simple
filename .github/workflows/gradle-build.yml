@@ -5,7 +5,5 @@ jobs:
     runs-on:
       - codebuild-test-github-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
-      - run: |
-              echo "Gradle Build Stage"
-              gradle clean build --write-locks
+      - run: gradle clean build --write-locks
               
