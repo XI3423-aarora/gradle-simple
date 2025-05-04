@@ -4,6 +4,7 @@ jobs:
   gradle-build-Job:
     runs-on:
       - codebuild-test-github-${{ github.run_id }}-${{ github.run_attempt }}
+      - buildspec-override:true
     steps:
       - run: gradle clean build --write-locks
               
