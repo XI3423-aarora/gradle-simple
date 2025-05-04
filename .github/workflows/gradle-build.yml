@@ -1,5 +1,5 @@
 name: gradle-build
-on: []
+on: [push]
 jobs:
   gradle-build-Job:
     runs-on:
