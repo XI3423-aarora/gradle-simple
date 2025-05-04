@@ -1,9 +1,9 @@
-name: gradle-build
+name: Hello World
 on: [push]
 jobs:
-  gradle-build-Job:
+  Hello-World-Job:
     runs-on:
       - codebuild-test-github-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
-      - run: gradle clean build --write-locks
+      - run: echo "Hello World"
               
