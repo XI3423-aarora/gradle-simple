@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: Build Gradle and Unit Test
         run: |
-          gradlew clean build --write-locks
+          gradle clean build --write-locks
     
